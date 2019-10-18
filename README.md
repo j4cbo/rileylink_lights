@@ -1,5 +1,7 @@
 # Hacking Christmas lights with spare avionics and pancreas parts
 
+![animation of lights being controlled by iPhone](images/lights.webp)
+
 ## Background
 
 A few years ago I bought [these LED lights](https://www.target.com/p/philips-25ct-christmas-led-16-functions-faceted-c9-string-lights-color-changing/-/A-52347189)
@@ -101,7 +103,8 @@ started digging through parts bins looking for a dev board that could run the Rf
 but came up blank. Then I remembered my [Stratux](http://stratux.me/). A Stratux receives
 [ADS-B](https://en.wikipedia.org/wiki/Automatic_dependent_surveillance_%E2%80%93_broadcast) signals
 from nearby airplanes; it's meant to allow pilots (or aviation enthusiasts) to see the position
-of nearby airplanes. Stratux's radio interface is the [RTL2832](https://www.amateur-radio-wiki.net/index.php?title=RTL2832)
+of other planes in the sky, for situational awareness while flying.
+Stratux's radio interface is the [RTL2832](https://www.amateur-radio-wiki.net/index.php?title=RTL2832)
 chip. This part was originally designed for digital TV, but has debug modes that can send raw
 samples to the computer - a software-defined radio. Perfect!
 
